@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/19589ebed2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header>
+        <button id="logo"><i class="fa-brands fa-shopify"></i></button><span ><input id="search-bar" type="text" placeholder="search"></span><button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button><button onclick="cartDrop()" id="cart-btn"><i class="fa-solid fa-cart-arrow-down"></i></button><button id="profile-btn" onclick="profileDrop()"><i class="fa-solid fa-user"></i></button>
+        <div id="profile-drop">
+        <div id="profile">
+
+            <p id="name">user</p>
+            <button class="sign-btn" id="sign-in-btn"><a href="sign-in.html">sign in</a></button>
+            <button class="sign-btn"  id="sign-up-btn"><a href="sign-up.html">create account</a></button>
+        </div>
+        </div>
+        </div>
+         <div id="categories">
+        <div class="category" id="electronics">electronics</div>
+        <div class="category" id="apparels">apparels</div>
+        <div class="category" id="sport">sport</div>
+        <div class="category" id="interior">interior</div>
+    </div>
+    </header>
+    <div id="body" onclick="profileWrap()">
+    <div id="home">
+    <div class="products">
+        <div class="product-cont" id="electronics">
+            <div><img id="img1" class="img-contain" src="download.jpeg">
+            <p id="p1-name">macbook air</p><p id="p1-price" class="price">&#8358;2,600,000</p><button onclick="addToCart1()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div>
+        </div>
+        <div class="product-cont">
+            <div><img id="img2" class="img-contain" src="OIP (3).webp">
+                <p id="p2-name">iphone 16</p><p id="p2-price" class="price">&#8358;1,200,000</p><button onclick="addToCart2()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+        <div class="product-cont">
+            <div><img id="img3" class="img-contain" src="OIP.webp">
+                <p id="p3-name">macbook pro</p><p id="p3-price" class="price">&#8358;3,200,000</p><button onclick="addToCart3()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+        <div class="product-cont">
+            <div><img id="img4" src="OIP (5).webp">
+                <p id="p4-name">galaxy note20</p><p id="p4-price" class="price">&#8358;1,000,000</p><button onclick="addToCart4()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"> </i>add to cart</button></div></div>
+    </div>
+    <div class="products">
+        <div class="product-cont" id="apparels">
+            <div><img id="img5" class="img-contain"  src="download.webp">
+                <p id="p5-name">rugby helmet</p><p id="p5-price" class="price">&#8358;20,000</p><button onclick="addToCart5()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div>
+        </div>
+        <div class="product-cont">
+            <div><img id="img6" src="OIP (14).webp">
+            <p id="p6-name">soccer ball</p><p id="p6-price" class="price">&#8358;10,000</p><button onclick="addToCart6()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+         <div class="product-cont">
+            <div><img id="img7" class="img-contain" src="download (1).jpeg">
+                <p id="p7-name">soccer cleats</p><p id="p7-price" class="price">&#8358;84,000</p><button onclick="addToCart7()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+        <div class="product-cont">
+            <div><img id="img8" class="img-contain" src="images (1).jpeg">
+                <p id="p8-name">nike</p><p id="p8-price" class="price">&#8358;80,000</p><button onclick="addToCart8()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+    </div>
+    <div class="products">
+        <div class="product-cont" id="apparels">
+            <div><img id="img9" src="Air-Jordan-4.webp">
+                <p id="p9-name">air jordan4</p><p id="p9-price" class="price">&#8358;98,000</p><button onclick="addToCart9()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div>
+        </div>
+        <div class="product-cont">
+            <div><img id="img10" src="air-jordan-super-fly-4-bg-black-white-drkgrey-infrrd23-768930-001-footwear _ sneaker-manufacturers-1.webp">
+            <p id="p10-name">air jordan super fly</p><p id="p10-price" class="price">&#8358;90,000</p><button onclick="addToCart10()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+        <div class="product-cont">
+            <div><img id="img11" class="img-contain" src="istockphoto-184967562-612x612.jpg">
+                <p id="p11-name">heels 4.0inch</p><p id="p11-price" class="price">&#8358;30,000</p><button onclick="addToCart11()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+        <div class="product-cont">
+            <div><img id="img12" src="OIP (11).webp">
+                <p id="p12-name">heels 3.5inch</p><p id="p12-price" class="price">&#8358;28,000</p><button onclick="addToCart12()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
+    </div>
+</div>
+<div id="cart-drop">
+<div id="cart">
+    <div id="total">total
+        <p id="total-price" class="price"></p><button class="add-to-cart-btn"><i class="fa-regular fa-credit-card"></i></button>
+    </div>
+<div class="cart-products">
+    <div id="cart-product1"><img id="cart-img1" class="img-contain" src="">
+        <p class="quantity" id="quantity1">0</p>
+        <p id="cartp1-name"></p>
+        <p id="cartp1-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product2"><img id="cart-img2" class="img-contain" src="">
+        <p class="quantity" id="quantity2">0</p>
+        <p id="cartp2-name"></p>
+        <p id="cartp2-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product3">
+        <img id="cart-img3" class="img-contain" src="">
+        <p class="quantity" id="quantity3">0</p>
+        <p id="cartp3-name"></p>
+        <p id="cartp3-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product4">
+        <img id="cart-img4" class="img-contain" src="">
+        <p class="quantity" id="quantity4">0</p>
+        <p id="cartp4-name"></p>
+        <p id="cartp4-price" class="price"></p>
+    </div> 
+    </div>
+ <div class="cart-products">
+    <div id="cart-product5">
+        <img id="cart-img5" class="img-contain" src="">
+        <p class="quantity" id="quantity5">0</p>
+        <p id="cartp5-name"></p>
+        <p id="cartp5-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product6">
+        <img id="cart-img6" class="img-contain" src="">
+        <p class="quantity" id="quantity6">0</p>
+        <p id="cartp6-name"></p>
+        <p id="cartp6-price" class="price"></p>
+    </div> 
+    </div>   
+<div class="cart-products">
+    <div id="cart-product7">
+        <img id="cart-img7" class="img-contain" src="">
+        <p class="quantity" id="quantity7">0</p>
+        <p id="cartp7-name"></p>
+        <p id="cartp7-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product8">
+        <img id="cart-img8" class="img-contain" src="">
+        <p class="quantity" id="quantity8">0</p>
+        <p id="cartp8-name"></p>
+        <p id="cartp8-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product9">
+        <img id="cart-img9" class="img-contain" src="">
+        <p class="quantity" id="quantity9">0</p>
+        <p id="cartp9-name"></p>
+        <p id="cartp9-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product10">
+        <img id="cart-img10" class="img-contain" src="">
+        <p class="quantity" id="quantity10">0</p>
+        <p id="cartp10-name"></p>
+        <p id="cartp10-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product11">
+        <img id="cart-img11" class="img-contain" src="">
+        <p class="quantity" id="quantity11">0</p>
+        <p id="cartp11-name"></p>
+        <p id="cartp11-price" class="price"></p>
+    </div> 
+    </div>
+<div class="cart-products">
+    <div id="cart-product12">
+        <img id="cart-img12" class="img-contain" src="">
+        <p class="quantity" id="quantity12">0</p>
+        <p id="cartp12-name"></p>
+        <p id="cartp12-price" class="price"></p>
+    </div> 
+    </div>
+</div>
+</div>
+</div>
+    </body>
+</html>

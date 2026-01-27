@@ -1,0 +1,78 @@
+body{
+    background: rgb(234, 234, 234);
+    font-family: "Zalando Sans Expanded", sans-serif;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#login-box{
+    height: 70vh;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 40%;
+    place-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    
+}
+input::placeholder{
+text-transform:capitalize;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+form{
+    height: 70vh;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 70%;
+    place-items: center;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+input{
+    height: 5vh;
+    width: 70%;
+    border-radius: 3px;
+    border: 1px solid black;
+    display: block;
+
+}
+#submit{
+    width: 20%;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+a{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+#links{
+    display: flex;
+}
+h5{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#logo{
+    border: none;
+    background: none;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 3%;
+}
+#logo i{
+   background-color: aqua;
+   font-size: 50px;
+   margin-top: 3%;
+}
