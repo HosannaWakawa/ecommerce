@@ -407,6 +407,14 @@ document.addEventListener('keydown', (e)=>{
     }
 })
 
+document.addEventListener('keydown', (e)=>{
+    if (e.key === 'Backspace'){
+
+        console.log('backspace pressed')
+        setTimeout(search, 50);
+    }
+})
+
 
 const input = document.getElementById('search-bar');
 const products =document.querySelectorAll('.product');
