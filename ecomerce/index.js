@@ -378,3 +378,58 @@ function addToCart12(){
     quantity.textContent=parseInt(quantity.textContent)+1;
     alert("successfully added to cart")
 }
+
+function search(){
+const input=document.getElementById('search-bar');
+const button=document.getElementById('search-btn')
+const listItems=document.querySelectorAll('.product');
+
+
+    const inputValue=input.value.toLowerCase().trim();
+    
+    listItems.forEach((item) => {
+        const itemText=item.querySelector('p').textContent.toLowerCase().trim();
+        console.log(`INPUT: ${inputValue}, Item text: ${itemText}`);
+        if(inputValue === ''){
+            item.parentElement.style.display='';
+        }
+        else if((itemText.includes(inputValue))){
+            item.parentElement.style.display='';
+        }else{
+            item.parentElement.style.display='none';
+        }
+    });
+
+}
+document.addEventListener('keydown', (e)=>{
+    if (e.key === 'Enter'){
+        search();
+    }
+})
+
+
+const input = document.getElementById('search-bar');
+const products =document.querySelectorAll('.product');
+
+input.addEventListener('input', () => {
+    const inputValue=input.value.toLowerCase().trim();
+
+    if (inputValue === ''){
+        products.forEach((product) =>{
+            product.style.display='';
+        });
+    }else{
+        products.forEach((product) => {
+             const itemText=product.querySelector('p').textContent.toLowerCase().trim();
+        console.log(`INPUT: ${inputValue}, Item text: ${itemText}`);
+        if(inputValue === ''){
+            product.parentElement.style.display='';
+        }
+        else if((itemText.includes(inputValue))){
+            product.parentElement.style.display='';
+        }else{
+            product.parentElement.style.display='none';
+        }
+        })
+    }
+})

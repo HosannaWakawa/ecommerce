@@ -7,12 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-        <script src="index.js"></script>
         <script src="https://kit.fontawesome.com/19589ebed2.js" crossorigin="anonymous"></script>
     </head>
     <body>
     <header>
-        <button id="logo"><i class="fa-brands fa-shopify"></i></button><span ><input id="search-bar" type="text" placeholder="search"></span><button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button><button onclick="cartDrop()" id="cart-btn"><i class="fa-solid fa-cart-arrow-down"></i></button><button id="profile-btn" onclick="profileDrop()"><i class="fa-solid fa-user"></i></button>
+        <button id="logo"><i class="fa-brands fa-shopify"></i></button><span ><input id="search-bar" type="text" placeholder="search"></span><button onclick="search()" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button><button onclick="cartDrop()" id="cart-btn"><i class="fa-solid fa-cart-arrow-down"></i></button><button id="profile-btn" onclick="profileDrop()"><i class="fa-solid fa-user"></i></button>
         <div id="profile-drop">
         <div id="profile">
 
@@ -33,54 +32,50 @@
     <div id="home">
     <div class="products">
         <div class="product-cont" id="electronics">
-            <div><img id="img1" class="img-contain" src="download.jpeg">
+            <div class="product"><img id="img1" class="img-contain" src="download.jpeg">
             <p id="p1-name">macbook air</p><p id="p1-price" class="price">&#8358;2,600,000</p><button onclick="addToCart1()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div>
         </div>
         <div class="product-cont">
-            <div><img id="img2" class="img-contain" src="OIP (3).webp">
+            <div class="product"><img id="img2" class="img-contain" src="OIP (3).webp">
                 <p id="p2-name">iphone 16</p><p id="p2-price" class="price">&#8358;1,200,000</p><button onclick="addToCart2()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
         <div class="product-cont">
-            <div><img id="img3" class="img-contain" src="OIP.webp">
+            <div class="product"><img id="img3" class="img-contain" src="OIP.webp">
                 <p id="p3-name">macbook pro</p><p id="p3-price" class="price">&#8358;3,200,000</p><button onclick="addToCart3()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
         <div class="product-cont">
-            <div><img id="img4" src="OIP (5).webp">
-                <p id="p4-name">galaxy note20</p><p id="p4-price" class="price">&#8358;1,000,000</p><button onclick="addToCart4()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"> </i>add to cart</button></div></div>
-    </div>
-    <div class="products">
-        <div class="product-cont" id="apparels">
-            <div><img id="img5" class="img-contain"  src="download.webp">
+            <div class="product"><img id="img4" src="OIP (5).webp">
+                <p id="p4-name">samsung galaxy note20</p><p id="p4-price" class="price">&#8358;1,000,000</p><button onclick="addToCart4()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"> </i>add to cart</button></div></div>
+    <div class="product-cont" id="apparels">
+            <div class="product"><img id="img5" class="img-contain"  src="download.webp">
                 <p id="p5-name">rugby helmet</p><p id="p5-price" class="price">&#8358;20,000</p><button onclick="addToCart5()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div>
         </div>
         <div class="product-cont">
-            <div><img id="img6" src="OIP (14).webp">
+            <div class="product"><img id="img6" src="OIP (14).webp">
             <p id="p6-name">soccer ball</p><p id="p6-price" class="price">&#8358;10,000</p><button onclick="addToCart6()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
          <div class="product-cont">
-            <div><img id="img7" class="img-contain" src="download (1).jpeg">
+            <div class="product"><img id="img7" class="img-contain" src="download (1).jpeg">
                 <p id="p7-name">soccer cleats</p><p id="p7-price" class="price">&#8358;84,000</p><button onclick="addToCart7()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
         <div class="product-cont">
-            <div><img id="img8" class="img-contain" src="images (1).jpeg">
+            <div class="product"><img id="img8" class="img-contain" src="images (1).jpeg">
                 <p id="p8-name">nike</p><p id="p8-price" class="price">&#8358;80,000</p><button onclick="addToCart8()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
-    </div>
-    <div class="products">
-        <div class="product-cont" id="apparels">
-            <div><img id="img9" src="Air-Jordan-4.webp">
+      <div class="product-cont" id="apparels">
+            <div class="product"><img id="img9" src="Air-Jordan-4.webp">
                 <p id="p9-name">air jordan4</p><p id="p9-price" class="price">&#8358;98,000</p><button onclick="addToCart9()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div>
         </div>
         <div class="product-cont">
-            <div><img id="img10" src="air-jordan-super-fly-4-bg-black-white-drkgrey-infrrd23-768930-001-footwear _ sneaker-manufacturers-1.webp">
+            <div class="product"><img id="img10" src="air-jordan-super-fly-4-bg-black-white-drkgrey-infrrd23-768930-001-footwear _ sneaker-manufacturers-1.webp">
             <p id="p10-name">air jordan super fly</p><p id="p10-price" class="price">&#8358;90,000</p><button onclick="addToCart10()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
         <div class="product-cont">
-            <div><img id="img11" class="img-contain" src="istockphoto-184967562-612x612.jpg">
+            <div class="product"><img id="img11" class="img-contain" src="istockphoto-184967562-612x612.jpg">
                 <p id="p11-name">heels 4.0inch</p><p id="p11-price" class="price">&#8358;30,000</p><button onclick="addToCart11()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
         <div class="product-cont">
-            <div><img id="img12" src="OIP (11).webp">
+            <div class="product"><img id="img12" src="OIP (11).webp">
                 <p id="p12-name">heels 3.5inch</p><p id="p12-price" class="price">&#8358;28,000</p><button onclick="addToCart12()" class="add-to-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> add to cart</button></div></div>
-    </div>
+</div>
 </div>
 <div id="cart-drop">
 <div id="cart">
     <div id="total">total
-        <p id="total-price" class="price"></p><button class="add-to-cart-btn"><i class="fa-regular fa-credit-card"></i></button>
+        <p id="total-price" class="price"></p><button id="pay-btn" class="add-to-cart-btn"><i class="fa-regular fa-credit-card"></i></button>
     </div>
 <div class="cart-products">
     <div id="cart-product1"><img id="cart-img1" class="img-contain" src="">
@@ -180,4 +175,5 @@
 </div>
 </div>
     </body>
+<script src="index.js"></script>
 </html>
